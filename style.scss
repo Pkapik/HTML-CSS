@@ -72,6 +72,11 @@ a {
         font-size: 32px;
         line-height: 38px;
         color: #222222;
+
+        &_color {
+            color: #F16D7F;
+            background: #F16D7F;
+        }
     }
 
     &_content {
@@ -357,6 +362,15 @@ a {
             margin-right: 8px;
             background: #FFFFFF;
         }
+
+        &_link:hover {
+            background: #F16D7F;
+        }
+
+
+
+
+
     }
 
 

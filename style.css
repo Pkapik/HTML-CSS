@@ -95,6 +95,11 @@ a {
   color: #222222;
 }
 
+.promo_heading_color {
+  color: #F16D7F;
+  background: #F16D7F;
+}
+
 .promo_content {
   padding-left: 64px;
 }
@@ -442,5 +447,9 @@ a {
   padding: 9px 9px 9px 9px;
   margin-right: 8px;
   background: #FFFFFF;
+}
+
+.footer_bottom_link:hover {
+  background: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
