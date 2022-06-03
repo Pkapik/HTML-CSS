@@ -176,6 +176,10 @@ a {
             padding-bottom: 25px;
         }
 
+        &_link:hover {
+            filter: brightness(0.5);
+        }
+
     }
 
 
@@ -358,7 +362,7 @@ a {
             text-align: center;
             width: 32px;
             height: 32px;
-            padding: 9px 9px 9px 9px;
+            padding: 10px 10px 10px 10px;
             margin-right: 8px;
             background: #FFFFFF;
         }
