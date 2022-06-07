@@ -168,15 +168,41 @@ a {
         display: flex;
         flex-direction: column;
         background: #F8F8F8;
+        position: relative;
+
+        &:hover .featured_items_card_img {
+            filter: brightness(0.5);
+        }
+
+        &:hover .featured_items_card_link {
+            display: flex;
+        }
 
         &_img {
-            width: 360px;
-            height: 420px;
+            width: 100%;
             padding-bottom: 25px;
         }
 
-        &_link:hover {
-            box-shadow: 0 0 5px #fff;
+        &_link {
+            position: absolute;
+            top: 188px;
+            left: 111px;
+            border: 1px solid #fff;
+            width: 139px;
+            height: 44px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+            color: #FFFFFF;
+
+            &:hover {
+                box-shadow: 0 0 5px #fff;
+            }
         }
 
     }

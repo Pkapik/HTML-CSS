@@ -212,12 +212,45 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #F8F8F8;
+  position: relative;
+}
+
+.featured_items_card:hover .featured_items_card_img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.featured_items_card:hover .featured_items_card_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .featured_items_card_img {
-  width: 360px;
-  height: 420px;
+  width: 100%;
   padding-bottom: 25px;
+}
+
+.featured_items_card_link {
+  position: absolute;
+  top: 188px;
+  left: 111px;
+  border: 1px solid #fff;
+  width: 139px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 11px;
+  color: #FFFFFF;
 }
 
 .featured_items_card_link:hover {
