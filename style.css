@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -108,8 +107,8 @@ a {
   display: -ms-grid;
   display: grid;
   gap: 30px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (360px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 360px);
   padding-top: 64px;
   padding-bottom: 96px;
 }
@@ -222,8 +221,8 @@ a {
 }
 
 .featured_items_card_link:hover {
-  -webkit-filter: brightness(0.5и);
-          filter: brightness(0.5и);
+  -webkit-box-shadow: 0 0 5px #fff;
+          box-shadow: 0 0 5px #fff;
 }
 
 .featured_items_headind_card {

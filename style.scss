@@ -86,7 +86,7 @@ a {
 .sale {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 360px);
     padding-top: 64px;
     padding-bottom: 96px;
 
@@ -176,7 +176,7 @@ a {
         }
 
         &_link:hover {
-            filter: brightness(0.5и);
+            box-shadow: 0 0 5px #fff;
         }
 
     }
