@@ -393,7 +393,7 @@
             box-sizing: border-box;
             position: absolute;
             z-index: 1;
-            &-box {
+            &_box {
                 position: relative;
                 height: 40px;
                 width: $width3;
@@ -414,7 +414,7 @@
                 padding: 24px 16px;
                 gap: 11px;
             }
-            &-sort {
+            &_sort {
                 padding-top: 39px;
                 display: flex;
                 gap: 30px;
@@ -434,9 +434,9 @@
             & .filter_img path {
                 fill: $colorSite;
             }
-            &__category {
+            &_category {
                 margin-top: 16px;
-                &-summary {
+                &_summary {
                     font-style: normal;
                     font-weight: 400;
                     font-size: 14px;
@@ -456,15 +456,15 @@
             display: flex;
             gap: 28px;
             align-items: center;
-            &__details {
+            &_details {
                 position: relative;
             }
-            &__summary {
+            &_summary {
                 display: flex;
                 align-items: center;
                 gap: 10px;
             }
-            &__content {
+            &_content {
                 position: absolute;
                 display: flex;
                 flex-direction: column;
