@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,55 +33,125 @@
             <a class="header_right_menu" href="#">
                 <img src="img/cart.svg" alt="cart">
             </a>
-
         </nav>
     </header>
-    <section class="promo">
-        <div class="promo_img">
-            <img src="img/promo.png" alt="photo promo">
-        </div>
-        <div class="promo_content">
-            <div class="promo_info">
-                <h1 class="promo_title">THE BRAND</h1>
-                <h2 class="promo_heading">OF LUXERIOUS
-                    <span class="promo_heading_color">FASHION</span>
-                </h2>
-            </div>
+    <section class="head center">
+        <h2 class="head_heading">NEW ARRIVALS </h2>
+        <div class="breadcrumb">
+            <div class="breadcrumb_box-link"><a class="breadcrumb_link" href="index.html">HOME</a></div>
+            <div class="breadcrumb_box-link"><a class="breadcrumb_link" href="#">MEN</a></div>
+            <div class="breadcrumb_box-link"><a class="breadcrumb_link" href="#">NEW ARRIVALS</a></div>
         </div>
     </section>
-    <section class="sale center">
-        <div class="sale_item">
-            <img src="img/si1.jpg" alt="sale image">
-            <div class="sale_content">
-                <p class="sale_text">30% OFF</p>
-                <h3 class="sale_heading">FOR WOMEN</h3>
-            </div>
+    <div class="filter_sort center">
+        <div class="filter_box">
+            <details class="filter">
+                <summary class="filter_summary">FILTER <svg class="filter_img" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
+                    </svg>
+                </summary>
+                <div class="filter_content">
+                    <details class="filter_category" open>
+                        <summary class="filter_category-summary">CATEGORY</summary>
+                        <div class="filter_box">
+                            <a class="filter_link">Accessories</a>
+                            <a class="filter_link">Bags</a>
+                            <a class="filter_link">Denim</a>
+                            <a class="filter_link">Hoodies & Sweatshirts</a>
+                            <a class="filter_link">Jackets & Coats</a>
+                            <a class="filter_link">Polos</a>
+                            <a class="filter_link">Shirts</a>
+                            <a class="filter_link">Shoes</a>
+                            <a class="filter_link">Sweaters & Knits</a>
+                            <a class="filter_link">T-Shirts</a>
+                            <a class="filter_link">Tanks</a>
+                        </div>
+                    </details>
+                    <details class="filter_category">
+                        <summary class="filter_category-summary">BRAND</summary>
+                        <div class="filter_box">
+                            <a class="filter_link">Accessories</a>
+                            <a class="filter_link">Bags</a>
+                            <a class="filter_link">Denim</a>
+                            <a class="filter_link">Hoodies & Sweatshirts</a>
+                            <a class="filter_link">Jackets & Coats</a>
+                            <a class="filter_link">Polos</a>
+                            <a class="filter_link">Shirts</a>
+                            <a class="filter_link">Shoes</a>
+                            <a class="filter_link">Sweaters & Knits</a>
+                            <a class="filter_link">T-Shirts</a>
+                            <a class="filter_link">Tanks</a>
+                        </div>
+                    </details>
+                    <details class="filter_category">
+                        <summary class="filter_category-summary">DESIGN</summary>
+                        <div class="filter_box">
+                            <a class="filter_link">Accessories</a>
+                            <a class="filter_link">Bags</a>
+                            <a class="filter_link">Denim</a>
+                            <a class="filter_link">Hoodies & Sweatshirts</a>
+                            <a class="filter_link">Jackets & Coats</a>
+                            <a class="filter_link">Polos</a>
+                            <a class="filter_link">Shirts</a>
+                            <a class="filter_link">Shoes</a>
+                            <a class="filter_link">Sweaters & Knits</a>
+                            <a class="filter_link">T-Shirts</a>
+                            <a class="filter_link">Tanks</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
         </div>
-        <div class="sale_item">
-            <img src="img/si2.jpg" alt="sale image">
-            <div class="sale_content">
-                <p class="sale_text">HOT DEAL</p>
-                <h3 class="sale_heading">FOR MEN</h3>
-            </div>
-        </div>
-        <div class="sale_item">
-            <img src="img/si3.jpg" alt="sale image">
-            <div class="sale_content">
-                <p class="sale_text">NEW ARRIVALS</p>
-                <h3 class="sale_heading">FOR KIDS</h3>
-            </div>
-        </div>
-        <div class="sale_item sale_item_big">
-            <img src="img/sibig.jpg" alt="sale image">
-            <div class="sale_content">
-                <p class="sale_text">LUXIROUS & TRENDY</p>
-                <h3 class="sale_heading">ACCESORIES</h3>
-            </div>
-        </div>
+        <div class="sort">
+            <details class="sort_details">
+                <summary class="sort_summary">TRENDING NOW <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                    </svg>
+                </summary>
+                <div class="sort_content">
 
-
-
-    </section>
+                </div>
+            </details>
+            <details class="sort_details">
+                <summary class="sort_summary">SIZE <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                    </svg></summary>
+                <div class="sort_content">
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>XS</span>
+                    </label>
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>S</span>
+                    </label>
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>M</span>
+                    </label>
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>L</span>
+                    </label>
+                </div>
+            </details>
+            <details class="sort_details">
+                <summary class="sort_summary">PRICE <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                    </svg></summary>
+                <div class="sort_content">
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>XS</span>
+                    </label>
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>S</span>
+                    </label>
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>M</span>
+                    </label>
+                    <label class="sort_label">
+                        <input type="checkbox" name="" id=""> <span>L</span>
+                    </label>
+                </div>
+            </details>
+        </div>
+    </div>
     <section class="featured_items center">
         <div class="featured_items_top ">
             <h2 class="featured_items_heading_top">
@@ -209,7 +279,6 @@
             <a class="featured_items_button_link" href="#">Browse All Product</a>
         </section>
     </section>
-
     <footer class="footer">
         <article class="footer_top">
             <div class="footer_top_content_box">
@@ -250,10 +319,33 @@
                 <p class="footer_bottom_text">© 2022 Brand All Rights Reserved.</p>
             </div>
             <div class="footer_bottom_right">
-                <a class="footer_bottom_link" href="#"><img class="footer_bottom_link_img" src="img/facebook.svg" alt="facebook"></a>
-                <a class="footer_bottom_link" href="#"><img class="footer_bottom_link_img" src="img/instagramm.svg" alt="instagramm"></a>
-                <a class="footer_bottom_link" href="#"><img class="footer_bottom_link_img" src="img/p.svg" alt="p"></a>
-                <a class="footer_bottom_link" href="#"><img class="footer_bottom_link_img" src="img/twitter.svg" alt="twitter"></a>
+                <a class="footer_bottom_link" href="#"><svg width="9" height="15"
+                    viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15848 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"
+                        fill="black" />
+                </svg></a>
+                <a class="footer_bottom_link" href="#">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15848 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"
+                                fill="black" />
+                        </svg>
+                </a>
+                <a class="footer_bottom_link" href="#">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15848 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"
+                                fill="black" />
+                        </svg>
+                </a>
+                <a class="footer_bottom_link" href="#">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15848 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"
+                                fill="black" />
+                        </svg>
+                </a>
             </div>
         </div>
     </footer>
