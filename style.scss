@@ -328,18 +328,24 @@ a {
             line-height: 19px;
             color: $colorTextContent;
         }
-        &_link {
-            align-self: center;
-            text-align: center;
-            width: 32px;
-            height: 32px;
-            padding: 10px 10px 10px 10px;
-            margin-right: 8px;
-            background: #FFFFFF;
-        }
-        &_link:hover {
-            background: $colorSite;
-            fill: #FFFFFF
+        &_right {
+            display: flex;
+            gap: 8px;
+            &_link {
+                width: 32px;
+                height: 32px;
+                display: block;
+                background: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    background: $colorSite;
+                }
+                &:hover path {
+                    fill: #FFFFFF
+                }
+            }
         }
     }
 }
@@ -427,12 +433,12 @@ a {
     &[open] {
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    }
-    & .filter_summary {
-        color: $colorSite;
-    }
-    & .filter_img path {
-        fill: $colorSite;
+        & .filter_summary {
+            color: $colorSite;
+        }
+        & .filter_img path {
+            fill: $colorSite;
+        }
     }
     &_category {
         margin-top: 16px;
