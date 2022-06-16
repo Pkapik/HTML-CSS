@@ -145,7 +145,6 @@ a {
         display: grid;
         gap: 30px;
         grid-template-columns: repeat(3, 1fr);
-        padding-bottom: 63px;
     }
     &_card {
         display: flex;
@@ -205,6 +204,7 @@ a {
     }
     &_button {
         text-align: center;
+        padding-top: 63px;
     }
     &_button_link {
         font-size: 16px;
@@ -421,7 +421,8 @@ a {
         gap: 11px;
     }
     &_sort {
-        padding-top: 39px;
+        padding-top: 51px;
+        padding-bottom: 65px;
         display: flex;
         gap: 30px;
     }
@@ -482,5 +483,25 @@ a {
         z-index: 1;
         top: 22px;
         left: -9px;
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 48px;
+    padding-bottom: 98px;
+    &_box {
+        display: flex;
+        gap: 18px;
+        padding: 12px 15px;
+        border: 1px solid #000;
+    }
+    &_link {
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
     }
 }

@@ -200,7 +200,6 @@ a {
   gap: 30px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 63px;
 }
 
 .featured_items_card {
@@ -283,6 +282,7 @@ a {
 
 .featured_items_button {
   text-align: center;
+  padding-top: 63px;
 }
 
 .featured_items_button_link {
@@ -601,7 +601,8 @@ a {
 }
 
 .filter_sort {
-  padding-top: 39px;
+  padding-top: 51px;
+  padding-bottom: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,5 +694,35 @@ a {
   z-index: 1;
   top: 22px;
   left: -9px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding-top: 48px;
+  padding-bottom: 98px;
+}
+
+.pagination_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  padding: 12px 15px;
+  border: 1px solid #000;
+}
+
+.pagination_link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
 }
 /*# sourceMappingURL=style.css.map */
