@@ -505,7 +505,7 @@ a {
           justify-content: space-between;
 }
 
-.head__heading {
+.head_heading {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -556,7 +556,7 @@ a {
   z-index: 1;
 }
 
-.filter_box {
+.filter-box {
   position: relative;
   height: 40px;
   width: 360px;
@@ -633,7 +633,7 @@ a {
   border-bottom: 1px solid #EBEBEB;
 }
 
-.filter_category[open] .filter_category-summary {
+.filter_category[open] .filter_category_summary {
   color: #F16D7F;
 }
 
