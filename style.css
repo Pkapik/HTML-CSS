@@ -566,7 +566,8 @@ a {
 }
 .content_line_big {
   width: 641px;
-  background: #eaeaea;
+  border-top: 1px solid #eaeaea;
+  margin-bottom: 64px;
 }
 .content_text {
   width: 555px;
