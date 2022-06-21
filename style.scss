@@ -54,7 +54,6 @@ a {
     top: 75px;
     right: 0;
     z-index: 1;
-    transform: translate(50px 0px);
     transition: transform 1s;
     width: $widthMobileMenu;
     background: #ffffff;
@@ -216,9 +215,11 @@ a {
         position: relative;
         &:hover .featured_items_card_img {
             filter: brightness(0.5);
+            transition: 1s;
         }
         &:hover .featured_items_card_link {
             display: flex;
+            transition: 1s;
         }
         &_img {
             width: 100%;
@@ -240,9 +241,6 @@ a {
             justify-content: center;
             gap: 11px;
             color: #ffffff;
-            &:hover {
-                box-shadow: 0 0 5px #fff;
-            }
         }
     }
     &_headind_card {
@@ -264,18 +262,46 @@ a {
         font-size: 16px;
         line-height: 19px;
         color: $colorSite;
+        padding-bottom: 20px;
     }
     &_button {
-        text-align: center;
-        padding-top: 63px;
-    }
-    &_button_link {
+        transition: 1.5s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 14px 38px;
+        border: 1px solid #ff6a6a;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         color: #f26376;
-        text-decoration: none;
-        border: 1px solid #ff6a6a;
-        padding: 14px 38px;
+        margin-bottom: 96px;
+        &_link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #f26376;
+            margin-bottom: 96px;
+            &:hover {
+                color: #fff;
+                transition: 0.2s;
+            }
+            &:hover path {
+                fill: white;
+            }
+        }
+        &:hover a {
+            color: #fff;
+            transition: 0.2s;
+        }
+        &:hover {
+            background-color: $colorSite;
+            color: #fff;
+        }
     }
 }
 
@@ -402,9 +428,11 @@ a {
                 justify-content: center;
                 align-items: center;
                 &:hover {
+                    transition: 0.5s;
                     background: $colorSite;
                 }
                 &:hover path {
+                    transition: 0.5s;
                     fill: #ffffff;
                 }
             }
@@ -456,6 +484,7 @@ a {
 }
 
 .filter {
+    transition: 1s;
     width: 100%;
     padding: 13px 16px 16px;
     box-sizing: border-box;
@@ -647,19 +676,42 @@ a {
         padding-bottom: 64px;
     }
     &_button {
-        border: 1px solid #f26376;
-        margin-top: 49px;
+        transition: 1.5s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 14px 38px;
+        border: 1px solid #ff6a6a;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         color: #f26376;
-        padding: 14px 58px 14px 23px;
+        margin-bottom: 96px;
         &_link {
-            gap: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
             color: #f26376;
-            text-decoration: none;
+            margin-bottom: 96px;
+            &:hover {
+                color: #fff;
+                transition: 0.2s;
+            }
+            &:hover path {
+                fill: white;
+            }
+        }
+        &:hover a {
+            color: #fff;
+            transition: 0.2s;
+        }
+        &:hover {
+            background-color: $colorSite;
+            color: #fff;
         }
     }
 }
