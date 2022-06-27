@@ -1,4 +1,6 @@
 @import "var";
+@import "transform";
+
 * {
     margin: 0;
     padding: 0;
@@ -22,13 +24,29 @@ a {
 }
 
 .header {
-    min-height: 75px;
-    background: $colorContent;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    &_menu {
+        min-height: 75px;
+        background-color: $colorContent;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        & a {
+            cursor: pointer;
+            &:hover path {
+                fill: $colorPink;
+                transition: 0.4s;
+            }
+        }
+        & label {
+            cursor: pointer;
+            &:hover path {
+                fill: $colorPink;
+                transition: 0.4s;
+            }
+        }
+    }
     &_left {
         display: flex;
         align-items: center;
@@ -41,22 +59,35 @@ a {
     }
     &_checkbox {
         position: absolute;
-        visibility: hidden;
+        overflow: hidden;
         left: -9999999px;
     }
     &_checkbox:checked~.mobile-menu {
-        transform: scale(0);
+        right: 0;
+    }
+}
+.header_checkbox_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & button {
+        background-color: transparent;
+        border: transparent;
+    }
+    & button:hover svg path {
+        fill: $colorPink;
+        transition: 0.2s;
     }
 }
 
 .mobile-menu {
     position: absolute;
     top: 75px;
-    right: 0;
+    right: -$widthMobileMenu;
     z-index: 1;
-    transition: transform 1s;
+    transition: right 0.6s;
     width: $widthMobileMenu;
-    background: #ffffff;
+    background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     padding: 32px;
     box-sizing: border-box;
@@ -72,10 +103,10 @@ a {
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        color: #6f6e6e;
-        &:hover {
-            color: $colorSite;
-        }
+        color: #6F6E6E;
+    }
+    &:hover {
+        color: $colorSite;
     }
     &_title {
         font-style: normal;
@@ -112,6 +143,8 @@ a {
         border-left: 12px solid $colorSite;
         padding-left: 16px;
         margin-top: 48%;
+        -webkit-animation: slide-in-bck-right 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-bck-right 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &_title {
         font-style: normal;
@@ -776,6 +809,10 @@ a {
         line-height: 29px;
         color: #222222;
         padding-bottom: 42px;
+        &:hover {
+            color: $colorSite;
+            transition: 0.4s;
+        }
     }
     & .quanity_block {
         display: flex;
@@ -849,13 +886,19 @@ a {
     & button {
         padding: 16px 40px;
         background-color: transparent;
-        border: 1px solid #a4a4a4;
+        border: 1px solid #A4A4A4;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
         color: #000000;
         text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            background-color: #F8F3F4;
+            transition: 0.4s;
+            color: $colorSite;
+        }
     }
 }
 
@@ -903,6 +946,11 @@ a {
         border: 1px solid #a4a4a4;
         background-color: transparent;
         text-transform: uppercase;
+        &:hover {
+            background-color: #F8F3F4;
+            transition: 0.4s;
+            color: $colorSite;
+        }
     }
 }
 
@@ -943,5 +991,9 @@ a {
         line-height: 19px;
         color: #ffffff;
         border: transparent;
+        &:hover {
+            transition: 0.2s;
+            background-color: #E05C6E;
+        }
     }
 }
