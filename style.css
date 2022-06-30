@@ -133,6 +133,155 @@
     opacity: 1;
   }
 }
+.registration_content {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.registration_content .registration_form {
+  max-width: 360px;
+}
+.registration_content .registration_form .registration_form_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.registration_content .registration_form .registration_form_content .registration__form_notification {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-bottom: 40px;
+}
+.registration_content .registration_form h4 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.registration_content .registration_form input {
+  width: calc(100% - 32px);
+  height: 44px;
+  padding-left: 16px;
+  border: 1px solid #A4A4A4;
+  padding-right: 16px;
+  margin-bottom: 20px;
+}
+.registration_content .registration_form input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration_content .registration_form input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration_content .registration_form input::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration_content .registration_form .gender_choice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.registration_content .registration_form .gender_choice p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.registration_content .registration_form .gender_choice p:last-child {
+  display: none;
+}
+.registration_content .registration_form .gender_choice p input {
+  margin-bottom: 0px;
+  width: 16px;
+  margin-right: 10px;
+}
+.registration_content .registration_form .gender_choice p input:checked {
+  background-color: #F16D7F;
+}
+.registration_content .registration_form button {
+  padding: 16px 30px;
+  background-color: #F16D7F;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.registration_content .registration_form button:hover {
+  transition: 0.2s;
+  background-color: #E05C6E;
+}
+.registration_content .registration_form button svg {
+  margin-left: 20px;
+}
+.registration_content .registration_perks {
+  max-width: 652px;
+}
+.registration_content .registration_perks h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+.registration_content .registration_perks p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+.registration_content .registration_perks ul {
+  list-style: url(img/prop_list.svg);
+  list-style-position: inside;
+  padding-right: 34px;
+}
+.registration_content .registration_perks li {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.registration_content .registration_perks li::marker {
+  margin-right: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -163,6 +312,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  transition: transform 1s;
 }
 .header_menu a {
   cursor: pointer;
@@ -170,6 +320,7 @@ a {
 .header_menu a:hover path {
   fill: #F16D7F;
   transition: 0.4s;
+  transform: scale(1.02);
 }
 .header_menu label {
   cursor: pointer;
@@ -177,6 +328,7 @@ a {
 .header_menu label:hover path {
   fill: #F16D7F;
   transition: 0.4s;
+  transform: scale(1.02);
 }
 .header_left {
   display: flex;
@@ -444,6 +596,7 @@ a {
   line-height: 19px;
   color: #f26376;
   margin-bottom: 96px;
+  transition: transform 0.1s;
 }
 .featured_items_button_link {
   font-style: normal;
@@ -456,6 +609,7 @@ a {
 .featured_items_button_link:hover {
   color: #fff;
   transition: 0.2s;
+  transform: scale(1.05);
 }
 .featured_items_button_link:hover path {
   fill: white;
@@ -463,10 +617,12 @@ a {
 .featured_items_button:hover a {
   color: #fff;
   transition: 0.2s;
+  transform: scale(1.05);
 }
 .featured_items_button:hover {
   background-color: #f16d7f;
   color: #fff;
+  transform: scale(1.05);
 }
 
 .footer {
@@ -547,26 +703,45 @@ a {
   padding-bottom: 32px;
 }
 .footer_center_right_input {
-  background: #e1e1e1;
-  border-radius: 10px 0 0 10px;
-  min-height: 49px;
-  padding-left: 22px;
-}
-.footer_center_right_inputarea {
-  display: flex;
-  flex-direction: row;
-}
-.footer_center_right_link {
-  display: flex;
-  align-items: center;
-  background: #f16d7f;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  color: #222224;
+  opacity: 0.67;
+  background: #E1E1E1;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  border-radius: 10px 0 0 10px;
+  padding: 7px 64px 6px 22px;
   min-height: 49px;
+  outline: none;
+}
+.footer_center_right_inputarea {
+  display: flex;
+}
+.footer_center_right_link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+  box-sizing: border-box;
   border-radius: 0 10px 10px 0;
-  padding: 8px;
+  min-height: 49px;
+  padding: 7px;
+  outline: none;
+  transition: transform 0.1s;
+}
+.footer_center_right_link:hover {
+  transform: scale(1.05);
 }
 .footer_bottom {
   background: #222224;
@@ -594,10 +769,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.1s;
 }
 .footer_bottom_right_link:hover {
   transition: 0.5s;
   background: #f16d7f;
+  transform: scale(1.05);
 }
 .footer_bottom_right_link:hover path {
   transition: 0.5s;

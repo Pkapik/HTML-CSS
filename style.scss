@@ -1,5 +1,6 @@
 @import "var";
 @import "transform";
+@import "registration";
 
 * {
     margin: 0;
@@ -32,11 +33,13 @@ a {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        transition: transform 1s;
         & a {
             cursor: pointer;
             &:hover path {
                 fill: $colorPink;
                 transition: 0.4s;
+                transform: scale(1.02)
             }
         }
         & label {
@@ -44,6 +47,7 @@ a {
             &:hover path {
                 fill: $colorPink;
                 transition: 0.4s;
+                transform: scale(1.02)
             }
         }
     }
@@ -312,6 +316,7 @@ a {
         line-height: 19px;
         color: #f26376;
         margin-bottom: 96px;
+        transition: transform 0.1s;
         &_link {
             font-style: normal;
             font-weight: 400;
@@ -322,6 +327,7 @@ a {
             &:hover {
                 color: #fff;
                 transition: 0.2s;
+                transform: scale(1.05)
             }
             &:hover path {
                 fill: white;
@@ -330,10 +336,12 @@ a {
         &:hover a {
             color: #fff;
             transition: 0.2s;
+            transform: scale(1.05)
         }
         &:hover {
             background-color: $colorSite;
             color: #fff;
+            transform: scale(1.05)
         }
     }
 }
@@ -413,26 +421,45 @@ a {
                 padding-bottom: 32px;
             }
             &_input {
-                background: #e1e1e1;
-                border-radius: 10px 0 0 10px;
-                min-height: 49px;
-                padding-left: 22px;
-            }
-            &_inputarea {
-                display: flex;
-                flex-direction: row;
-            }
-            &_link {
-                display: flex;
-                align-items: center;
-                background: #f16d7f;
+                font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 17px;
-                color: #ffffff;
+                display: flex;
+                align-items: center;
+                color: #222224;
+                opacity: 0.67;
+                background: #E1E1E1;
+                border: 1px solid #E1E1E1;
+                box-sizing: border-box;
+                border-radius: 10px 0 0 10px;
+                padding: 7px 64px 6px 22px;
                 min-height: 49px;
+                outline: none;
+            }
+            &_inputarea {
+                display: flex;
+            }
+            &_link {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                background: #F16D7F;
+                border: 1px solid #F16D7F;
+                box-sizing: border-box;
                 border-radius: 0 10px 10px 0;
-                padding: 8px;
+                min-height: 49px;
+                padding: 7px;
+                outline: none;
+                transition: transform 0.1s;
+                &:hover {
+                transform: scale(1.05);
+                }
             }
         }
     }
@@ -460,9 +487,11 @@ a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transition: transform 0.1s;
                 &:hover {
                     transition: 0.5s;
                     background: $colorSite;
+                    transform: scale(1.05);
                 }
                 &:hover path {
                     transition: 0.5s;
